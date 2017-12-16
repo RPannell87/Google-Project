@@ -1,24 +1,102 @@
-.nav .l-nav {
-  position: fixed;
-  top: 0px;
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ ul {
+   list-style-type: none;
+ }
+ div.nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
 
+ul.nav-left {
+  display: flex;
+  padding-left: 18px;
+  padding-top: 15px;
+  justify-content: space-between;
+}
+li {
+  padding-left: 10px;
 }
 
-.nav .r-nav {
-  position: fixed;
-  top: 0px; right: 165px
-}
-
-div.l-footer {
-  position: fixed;
-  bottom: 0px; left: 15px;
-}
-
-div.r-footer{
-  position: fixed;
-  bottom: 0px; right: 15px;
-}
 div.search {
-  position: relative;
-  top: 300px; left: 500px;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+div.searchbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+input[name=search] {
+  width: 350px;
+}
+
+input[type=submit] {
+  width: 135px;
+  margin: 11px 4px;
+  height: 36px;
+}
+
+.nav-right {
+  display: flex;
+  position: fixed;
+  top: 18px; right: 15px;
+  padding-right: 10px;
+}
+div.footer-bar {
+  display: flex;
+ position: absolute;
+ flex-direction: row;
+ justify-content: space-between;
+ line-height: 40px;
+ border-top: 1px solid #e4e4e4;
+ background: #f2f2f2;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+}
+ul.l-footer{
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  left: 18px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+ul.r-footer{
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 18px;
+  padding-right: 10px;
+  justify-content: space-between;
 }
